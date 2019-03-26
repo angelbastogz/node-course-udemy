@@ -19,6 +19,9 @@ mongoose.connect(process.env.URLDB,
                 { useNewUrlParser: true, useCreateIndex: true },
                 (err, res) => {
 
+    console.log(process.env.URLDB)
+    console.log(process.env.NODE_ENV)
+
     if (err) throw err;
 
     console.log('Base de datos ONLINE')
